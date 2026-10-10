@@ -42,3 +42,15 @@ The account holder **King** is listed as author; **ChatGPT (GPT-6, OpenAI)** ass
 - [OEIS A109908](https://oeis.org/A109908)
 - [Zhi-Wei Sun, *On sums of primes and triangular numbers*](https://arxiv.org/abs/0803.3737)
 - [Kenny Applegate and Kyle Pratt, *Computational Results on Sums of a Prime with Squares or Cubes* (2026)](https://arxiv.org/abs/2609.20505)
+
+
+## Run the published verifier
+
+[Python verifier](scripts/a109908_verify.py) (Python 3.9+, standard library only):
+
+```bash
+python scripts/a109908_verify.py --limit 10000
+python scripts/a109908_verify.py --n 524
+```
+
+The script uses deterministic 64-bit Miller-Rabin bases and self-tests. It verifies **finite ranges only** and does not prove the conjecture.
